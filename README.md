@@ -163,6 +163,19 @@ timeout if it has one (Claude Code: the environment variables `MCP_TIMEOUT` and 
 other clients). The simulator's output goes to the server's stderr. For a faithful comparison with the built-in loop, give the
 agent only these tools.
 
+**Example client.** `examples/mcp_client.py` shows the whole client side in one short file, with the standard `mcp` client
+SDK: it starts the server as a stdio subprocess, reads the tool list and the prompt `inhabitant_task`, converts the MCP tool
+schemas to the model's function-calling format, and runs the loop (model call -> `call_tool` -> the text and the image go
+back into the conversation) until the server says the episode is over.
+
+```bash
+python examples/mcp_client.py --task low_01 --model claude-opus-5.5     # a model of configs/models.json, key from the environment
+python examples/mcp_client.py --task low_01 --dry_run                   # a scripted model: checks the install, no API key
+```
+
+The server it starts needs the GPU machine with the simulator and Kimodo installed; the model can be any entry of
+`configs/models.json`. It is an example, not a requirement: any MCP-capable client or agent framework can drive the server.
+
 ## Run the benchmark
 
 ```bash
@@ -218,7 +231,7 @@ patches/                    the two habitat-lab patches
 tests/                      replay_log.py (replay the tool calls of a finished run, no LLM), mcp_smoke.py (MCP server
                             with a scripted client, no LLM); both need a GPU
 configs/models.example.json
-examples/
+examples/                   mcp_client.py (a model drives the MCP server: the client side in one file)
 ```
 
 ## Licence
