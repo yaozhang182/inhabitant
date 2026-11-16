@@ -1,0 +1,71 @@
+{
+ "id": "high_09",
+ "level": "high",
+ "categories": [
+  "container",
+  "floor",
+  "surface"
+ ],
+ "physics_levels": [
+  0,
+  2,
+  0
+ ],
+ "base": {
+  "set": "complex_instruction",
+  "id": 36
+ },
+ "instruction": "Could you tidy up? Put the toy airplane in the basket next to the TV stand, kick the ball under the black table, and the cushion on the floor goes back on the sofa.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "072-d_toy_airplane_:0000",
+   "in": "frl_apartment_basket_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "kick",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01",
+   "under": true
+  },
+  {
+   "id": "c3",
+   "kind": "on_top",
+   "obj": "frl_apartment_cushion_03_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_basket",
+   "pos": [
+    2.014477491378784,
+    0.26534298062324524,
+    5.608277320861816
+   ],
+   "yaw": 16.0100275355357,
+   "handle": "frl_apartment_basket_:0000"
+  },
+  {
+   "template": "frl_apartment_cushion_03",
+   "pos": [
+    2.1938118934631348,
+    0.21534298062324525,
+    3.889691114425659
+   ],
+   "yaw": 81.42052062452899,
+   "handle": "frl_apartment_cushion_03_:0000"
+  }
+ ],
+ "objects": {
+  "056_tennis_ball_:0000": [
+   -0.857,
+   0.053,
+   1.182
+  ]
+ }
+}

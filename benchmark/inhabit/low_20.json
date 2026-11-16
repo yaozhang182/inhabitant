@@ -1,0 +1,26 @@
+{
+ "id": "low_20",
+ "level": "low",
+ "categories": [
+  "eb"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "common_sense",
+  "id": 10
+ },
+ "instruction": "Can you bring something to assist in cutting paper at the sink?",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "eb"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {},
+ "eb_original": true
+}

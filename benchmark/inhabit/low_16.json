@@ -1,0 +1,29 @@
+{
+ "id": "low_16",
+ "level": "low",
+ "categories": [
+  "articulated",
+  "drawer"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 6
+ },
+ "instruction": "Could you pull the middle drawer in the kitchen open?",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "opened",
+   "marker": "cab_push_point_6"
+  }
+ ],
+ "order": [],
+ "joints": {
+  "cab_push_point_6": 0.0
+ },
+ "add_objects": [],
+ "objects": {}
+}

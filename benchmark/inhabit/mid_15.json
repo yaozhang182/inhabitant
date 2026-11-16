@@ -1,0 +1,53 @@
+{
+ "id": "mid_15",
+ "level": "mid",
+ "categories": [
+  "container",
+  "floor"
+ ],
+ "physics_levels": [
+  0,
+  2
+ ],
+ "base": {
+  "set": "base",
+  "id": 41
+ },
+ "instruction": "Tidy up: the rubriks cube goes in the cardboard box next to the sofa, and the ball gets kicked back under the black table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "077_rubiks_cube_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "kick",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01",
+   "under": true
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    -0.6077388525009155,
+    0.2653449773788452,
+    1.1963856220245361
+   ],
+   "yaw": 67.78950135414209,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {
+  "056_tennis_ball_:0000": [
+   2.185,
+   0.055,
+   5.784
+  ]
+ }
+}

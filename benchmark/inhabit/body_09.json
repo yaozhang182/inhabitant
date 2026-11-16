@@ -1,0 +1,51 @@
+{
+ "id": "body_09",
+ "level": "body",
+ "categories": [
+  "body",
+  "kneel",
+  "reach low",
+  "container"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 3
+ },
+ "instruction": "The toy airplane rolled under the black table. Kneel down, get it out and put it in the cardboard box.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "072-d_toy_airplane_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "kneel"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    2.2682766914367676,
+    0.2653438150882721,
+    4.8631110191345215
+   ],
+   "yaw": 184.18135013832654,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {
+  "072-d_toy_airplane_:0000": [
+   1.069,
+   0.059,
+   1.746
+  ]
+ }
+}

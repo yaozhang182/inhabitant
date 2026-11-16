@@ -1,0 +1,39 @@
+{
+ "id": "body_08",
+ "level": "body",
+ "categories": [
+  "body",
+  "kneel",
+  "reach low"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 13
+ },
+ "instruction": "Get down on your knees and put the apple away on the bottom shelf of the TV stand.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "013_apple_:0000",
+   "surface": "receptacle_aabb_TvStnd1_Top3_frl_apartment_tvstand"
+  },
+  {
+   "id": "c2",
+   "kind": "kneel"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "013_apple_:0000": [
+   0.908,
+   0.796,
+   6.084
+  ]
+ }
+}

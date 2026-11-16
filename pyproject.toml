@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inhabitant"
+version = "1.0.0"
+description = "Inhabitant: a training-free LLM agent that carries out household tasks with a human body"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.11"
+# torch, habitat-sim (HumanCLAW's half-physics build), habitat-lab 0.3.0 and Kimodo are installed by scripts/install_*.sh
+dependencies = [
+    "numpy<2",
+    "scipy",
+    "pyyaml",
+    "pillow",
+    "imageio",
+    "imageio-ffmpeg",
+    "httpx",
+    "anthropic",
+    "mcp>=2,<3",
+]
+
+[project.scripts]
+inhabitant = "inhabitant.agent:main"
+inhabitant-mcp = "inhabitant.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["inhabitant*"]
+
+[tool.setuptools.package-data]
+inhabitant = ["docs/*.md"]

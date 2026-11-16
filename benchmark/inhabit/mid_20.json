@@ -1,0 +1,26 @@
+{
+ "id": "mid_20",
+ "level": "mid",
+ "categories": [
+  "eb"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "long_horizon",
+  "id": 39
+ },
+ "instruction": "Transport all plate and put them on the right counter.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "eb"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {},
+ "eb_original": true
+}

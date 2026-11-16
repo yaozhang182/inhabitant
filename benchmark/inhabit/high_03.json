@@ -1,0 +1,55 @@
+{
+ "id": "high_03",
+ "level": "high",
+ "categories": [
+  "kitchen",
+  "articulated",
+  "all"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 0
+ },
+ "instruction": "Take everything out of the fridge, put it on the black table, and close the fridge again.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "015_peach_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "012_strawberry_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  },
+  {
+   "id": "c3",
+   "kind": "closed",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "joints": {
+  "fridge_push_point": 0.0
+ },
+ "add_objects": [],
+ "objects": {
+  "015_peach_:0000": [
+   -2.197,
+   1.273,
+   3.736
+  ],
+  "012_strawberry_:0000": [
+   -2.075,
+   1.271,
+   3.761
+  ]
+ },
+ "order": []
+}

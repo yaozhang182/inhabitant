@@ -1,0 +1,40 @@
+{
+ "id": "low_28",
+ "level": "low",
+ "categories": [
+  "floor",
+  "furniture"
+ ],
+ "physics_levels": [
+  2
+ ],
+ "base": {
+  "set": "base",
+  "id": 26
+ },
+ "instruction": "Nudge the shoe box under the black table - no need to pick it up, just push it with your foot.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "push",
+   "obj": "frl_apartment_shoebox_01_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01",
+   "under": true
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_shoebox_01",
+   "pos": [
+    2.2888498306274414,
+    0.2755260765552521,
+    5.707195281982422
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_shoebox_01_:0000"
+  }
+ ],
+ "objects": {}
+}

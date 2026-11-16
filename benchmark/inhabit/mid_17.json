@@ -1,0 +1,41 @@
+{
+ "id": "mid_17",
+ "level": "mid",
+ "categories": [
+  "articulated",
+  "drawer"
+ ],
+ "physics_levels": [
+  0,
+  0
+ ],
+ "base": {
+  "set": "visual_appearance",
+  "id": 31
+ },
+ "instruction": "Could you put the banana away in the left drawer in the kitchen?",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "opened",
+   "marker": "cab_push_point_7"
+  },
+  {
+   "id": "c2",
+   "kind": "inside",
+   "obj": "011_banana_:0000",
+   "container": "cab_push_point_7"
+  }
+ ],
+ "order": [
+  [
+   "c1",
+   "c2"
+  ]
+ ],
+ "joints": {
+  "cab_push_point_7": 0.0
+ },
+ "add_objects": [],
+ "objects": {}
+}

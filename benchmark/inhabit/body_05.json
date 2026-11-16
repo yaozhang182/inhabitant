@@ -1,0 +1,49 @@
+{
+ "id": "body_05",
+ "level": "body",
+ "categories": [
+  "body",
+  "sit"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 6
+ },
+ "instruction": "Bring the coffee mug from the right counter to the black table and sit down on the chair.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cup_01_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  },
+  {
+   "id": "c2",
+   "kind": "sit_on",
+   "surface": "receptacle_aabb_Chr1_Top1_frl_apartment_chair_01"
+  }
+ ],
+ "order": [
+  [
+   "c1",
+   "c2"
+  ]
+ ],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cup_01",
+   "pos": [
+    -2.30360675637099,
+    0.9197425818443299,
+    0.9540320775455571
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_cup_01_:0000"
+  }
+ ],
+ "objects": {}
+}

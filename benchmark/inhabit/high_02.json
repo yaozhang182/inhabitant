@@ -1,0 +1,84 @@
+{
+ "id": "high_02",
+ "level": "high",
+ "categories": [
+  "shelf",
+  "reach high",
+  "all"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 0
+ },
+ "instruction": "Clear the sofa: all the things on it go on the top shelf of the tall shelf next to the brown table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "016_pear_:0000",
+   "surface": "receptacle_aabb_WC2_Top1_frl_apartment_wall_cabinet_02"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "073-g_lego_duplo_:0000",
+   "surface": "receptacle_aabb_WC2_Top1_frl_apartment_wall_cabinet_02"
+  },
+  {
+   "id": "c3",
+   "kind": "on_top",
+   "obj": "072-d_toy_airplane_:0000",
+   "surface": "receptacle_aabb_WC2_Top1_frl_apartment_wall_cabinet_02"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "016_pear_:0000": [
+   3.344,
+   0.429,
+   5.974
+  ],
+  "073-g_lego_duplo_:0000": [
+   3.395,
+   0.434,
+   5.563
+  ],
+  "072-d_toy_airplane_:0000": [
+   3.221,
+   0.437,
+   6.105
+  ],
+  "014_lemon_:0000": [
+   -2.1554,
+   0.9397,
+   2.4109
+  ],
+  "018_plum_:0000": [
+   -2.1554,
+   0.9397,
+   2.5606
+  ],
+  "031_spoon_:0000": [
+   -2.1554,
+   0.9397,
+   2.7103
+  ],
+  "042_adjustable_wrench_:0000": [
+   -2.1554,
+   0.9397,
+   2.86
+  ],
+  "077_rubiks_cube_:0000": [
+   -2.1554,
+   0.9397,
+   3.0097
+  ]
+ }
+}

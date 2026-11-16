@@ -1,0 +1,26 @@
+{
+ "id": "low_19",
+ "level": "low",
+ "categories": [
+  "eb"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 1
+ },
+ "instruction": "Hey, on the sink, I accidentally left my plate, can you bring it to the right counter?",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "eb"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {},
+ "eb_original": true
+}

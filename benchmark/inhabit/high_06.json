@@ -1,0 +1,99 @@
+{
+ "id": "high_06",
+ "level": "high",
+ "categories": [
+  "container",
+  "all"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 30
+ },
+ "instruction": "Clear everything off the black table into the cardboard box next to it.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "013_apple_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "in_container",
+   "obj": "077_rubiks_cube_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c3",
+   "kind": "in_container",
+   "obj": "016_pear_:0000",
+   "in": "frl_apartment_box_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    2.4165127277374268,
+    0.2754850387573242,
+    3.1173665523529053
+   ],
+   "yaw": 185.27433084744007,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {
+  "011_banana_:0000": [
+   0.424,
+   0.876,
+   7.509
+  ],
+  "018_plum_:0000": [
+   0.625,
+   0.883,
+   7.52
+  ],
+  "029_plate_:0000": [
+   0.705,
+   0.903,
+   7.406
+  ],
+  "043_phillips_screwdriver_:0000": [
+   0.736,
+   0.899,
+   7.335
+  ],
+  "052_extra_large_clamp_:0000": [
+   0.496,
+   0.885,
+   7.621
+  ],
+  "072-d_toy_airplane_:0000": [
+   0.549,
+   0.901,
+   7.607
+  ],
+  "013_apple_:0000": [
+   3.719,
+   0.796,
+   3.384
+  ],
+  "077_rubiks_cube_:0000": [
+   3.892,
+   0.792,
+   3.415
+  ],
+  "016_pear_:0000": [
+   3.769,
+   0.785,
+   3.608
+  ]
+ }
+}

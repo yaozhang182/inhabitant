@@ -1,0 +1,38 @@
+{
+ "id": "low_05",
+ "level": "low",
+ "categories": [
+  "surface"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "complex_instruction",
+  "id": 36
+ },
+ "instruction": "There's a towel lying on the floor - could you put it back on the sofa?",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_towel_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_towel",
+   "pos": [
+    2.014477491378784,
+    0.21534298062324525,
+    5.608277320861816
+   ],
+   "yaw": 346.1853977218547,
+   "handle": "frl_apartment_towel_:0000"
+  }
+ ],
+ "objects": {}
+}

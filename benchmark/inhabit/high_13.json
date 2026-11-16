@@ -1,0 +1,52 @@
+{
+ "id": "high_13",
+ "level": "high",
+ "categories": [
+  "kitchen",
+  "articulated"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 17
+ },
+ "instruction": "Put the peach and the lemon in the fridge and close the door afterwards.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "inside",
+   "obj": "015_peach_:0000",
+   "container": "fridge_push_point"
+  },
+  {
+   "id": "c2",
+   "kind": "inside",
+   "obj": "014_lemon_:0000",
+   "container": "fridge_push_point"
+  },
+  {
+   "id": "c3",
+   "kind": "closed",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "order": [
+  [
+   "c1",
+   "c3"
+  ],
+  [
+   "c2",
+   "c3"
+  ]
+ ],
+ "joints": {
+  "fridge_push_point": 0.0
+ },
+ "add_objects": [],
+ "objects": {}
+}

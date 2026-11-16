@@ -1,0 +1,51 @@
+{
+ "id": "body_10",
+ "level": "body",
+ "categories": [
+  "body",
+  "kneel",
+  "reach low",
+  "container"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "long_horizon",
+  "id": 42
+ },
+ "instruction": "The block rolled under the black table. Kneel down, get it out and put it in the cardboard box.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "036_wood_block_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "kneel"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    2.333624839782715,
+    0.26534220576286316,
+    4.620182037353516
+   ],
+   "yaw": 238.03689692700823,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {
+  "036_wood_block_:0000": [
+   2.129,
+   0.13,
+   7.291
+  ]
+ }
+}

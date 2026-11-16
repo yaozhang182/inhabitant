@@ -1,0 +1,34 @@
+{
+ "id": "low_07",
+ "level": "low",
+ "categories": [
+  "shelf",
+  "reach high"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "long_horizon",
+  "id": 42
+ },
+ "instruction": "Could you put the can away on the top shelf of the tall shelf next to the right counter?",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "005_tomato_soup_can_:0000",
+   "surface": "receptacle_aabb_WC1_Top1frl_apartment_wall_cabinet_01"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "005_tomato_soup_can_:0000": [
+   1.265,
+   0.986,
+   1.521
+  ]
+ }
+}

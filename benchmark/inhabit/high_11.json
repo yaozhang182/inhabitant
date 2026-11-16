@@ -1,0 +1,68 @@
+{
+ "id": "high_11",
+ "level": "high",
+ "categories": [
+  "kitchen"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 7
+ },
+ "instruction": "Set the black table: bring the coffee mug, the dinner plate and the serving bowl from the right counter.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cup_01_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "frl_apartment_plate_01_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  },
+  {
+   "id": "c3",
+   "kind": "on_top",
+   "obj": "frl_apartment_bowl_03_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cup_01",
+   "pos": [
+    -2.1777265667915344,
+    0.9197425818443299,
+    0.6606752276420593
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_cup_01_:0000"
+  },
+  {
+   "template": "frl_apartment_plate_01",
+   "pos": [
+    -2.1777265667915344,
+    0.9197425818443299,
+    0.9106752276420593
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_plate_01_:0000"
+  }
+ ],
+ "objects": {
+  "frl_apartment_bowl_03_:0000": [
+   -2.178,
+   0.917,
+   1.161
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "id": "low_27",
+ "level": "low",
+ "categories": [
+  "floor"
+ ],
+ "physics_levels": [
+  2
+ ],
+ "base": {
+  "set": "base",
+  "id": 36
+ },
+ "instruction": "Kick the ball on the floor under the black table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "kick",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01",
+   "under": true
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "056_tennis_ball_:0000": [
+   1.876,
+   0.055,
+   1.311
+  ]
+ }
+}

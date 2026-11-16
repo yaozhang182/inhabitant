@@ -1,0 +1,55 @@
+{
+ "id": "high_04",
+ "level": "high",
+ "categories": [
+  "kitchen",
+  "articulated",
+  "all"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 9
+ },
+ "instruction": "Empty the fridge onto the black table, then shut the fridge door.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "014_lemon_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "015_peach_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01"
+  },
+  {
+   "id": "c3",
+   "kind": "closed",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "joints": {
+  "fridge_push_point": 0.0
+ },
+ "add_objects": [],
+ "objects": {
+  "014_lemon_:0000": [
+   0.462,
+   1.274,
+   4.59
+  ],
+  "015_peach_:0000": [
+   0.553,
+   1.273,
+   4.533
+  ]
+ },
+ "order": []
+}

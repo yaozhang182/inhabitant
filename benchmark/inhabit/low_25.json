@@ -1,0 +1,38 @@
+{
+ "id": "low_25",
+ "level": "low",
+ "categories": [
+  "surface"
+ ],
+ "physics_levels": [
+  1
+ ],
+ "base": {
+  "set": "complex_instruction",
+  "id": 19
+ },
+ "instruction": "Throw the towel lying on the floor onto the sofa - from a metre or more.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "throw",
+   "obj": "frl_apartment_towel_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_towel",
+   "pos": [
+    2.18666934967041,
+    0.21534315943717958,
+    0.7054790258407593
+   ],
+   "yaw": 248.3631586796599,
+   "handle": "frl_apartment_towel_:0000"
+  }
+ ],
+ "objects": {}
+}

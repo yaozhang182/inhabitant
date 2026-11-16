@@ -1,0 +1,54 @@
+{
+ "id": "low_11",
+ "level": "low",
+ "categories": [
+  "kitchen",
+  "avoid"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 49
+ },
+ "instruction": "Bring the coffee mug on the brown table to the sink - careful, don't touch the vase beside it.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cup_01_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  },
+  {
+   "id": "c2",
+   "kind": "avoid",
+   "thing": "frl_apartment_vase_01_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cup_01",
+   "pos": [
+    3.751072910273736,
+    0.984181878566742,
+    6.157758307629017
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_cup_01_:0000"
+  },
+  {
+   "template": "frl_apartment_vase_01",
+   "pos": [
+    3.9710729102737363,
+    0.984181878566742,
+    6.037758307629017
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_vase_01_:0000"
+  }
+ ],
+ "objects": {}
+}

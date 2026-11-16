@@ -1,0 +1,26 @@
+{
+ "id": "high_14",
+ "level": "high",
+ "categories": [
+  "eb"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "long_horizon",
+  "id": 30
+ },
+ "instruction": "Move the ball to the brown table, the block to the brown table, and the hammer to the black table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "eb"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {},
+ "eb_original": true
+}

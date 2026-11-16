@@ -1,0 +1,26 @@
+{
+ "id": "high_15",
+ "level": "high",
+ "categories": [
+  "eb"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "long_horizon",
+  "id": 46
+ },
+ "instruction": "Move the lemon to the left counter, the block to the brown table, and the bowl to the brown table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "eb"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {},
+ "eb_original": true
+}

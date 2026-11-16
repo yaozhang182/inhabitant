@@ -1,0 +1,45 @@
+{
+ "id": "low_30",
+ "level": "low",
+ "categories": [
+  "floor"
+ ],
+ "physics_levels": [
+  2
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 49
+ },
+ "instruction": "Push the shoe on the floor out of the way with your foot (half a metre or more); don't pick it up.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "push",
+   "obj": "frl_apartment_shoe_01_:0000",
+   "away": {
+    "dist": 0.5,
+    "from": [
+     3.412,
+     0.074,
+     0.341
+    ]
+   }
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_shoe_01",
+   "pos": [
+    3.4133012294769287,
+    0.17548497915267944,
+    0.3411938548088074
+   ],
+   "yaw": 74.08805891175115,
+   "handle": "frl_apartment_shoe_01_:0000"
+  }
+ ],
+ "objects": {}
+}

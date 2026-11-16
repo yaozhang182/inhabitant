@@ -1,0 +1,39 @@
+{
+ "id": "body_07",
+ "level": "body",
+ "categories": [
+  "body",
+  "kneel",
+  "reach low"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 21
+ },
+ "instruction": "Get down on your knees and put the cup away on the bottom shelf of the TV stand.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "065-j_cups_:0000",
+   "surface": "receptacle_aabb_TvStnd1_Top3_frl_apartment_tvstand"
+  },
+  {
+   "id": "c2",
+   "kind": "kneel"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "065-j_cups_:0000": [
+   0.868,
+   0.801,
+   7.102
+  ]
+ }
+}

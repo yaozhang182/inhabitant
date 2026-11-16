@@ -1,0 +1,52 @@
+{
+ "id": "high_12",
+ "level": "high",
+ "categories": [
+  "kitchen",
+  "articulated"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "visual_appearance",
+  "id": 31
+ },
+ "instruction": "Put the apple and the plum in the fridge and close the door afterwards.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "inside",
+   "obj": "013_apple_:0000",
+   "container": "fridge_push_point"
+  },
+  {
+   "id": "c2",
+   "kind": "inside",
+   "obj": "018_plum_:0000",
+   "container": "fridge_push_point"
+  },
+  {
+   "id": "c3",
+   "kind": "closed",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "order": [
+  [
+   "c1",
+   "c3"
+  ],
+  [
+   "c2",
+   "c3"
+  ]
+ ],
+ "joints": {
+  "fridge_push_point": 0.0
+ },
+ "add_objects": [],
+ "objects": {}
+}

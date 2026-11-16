@@ -1,0 +1,71 @@
+{
+ "id": "high_08",
+ "level": "high",
+ "categories": [
+  "container",
+  "floor",
+  "surface"
+ ],
+ "physics_levels": [
+  0,
+  2,
+  0
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 43
+ },
+ "instruction": "Could you tidy up? Put the rubriks cube in the basket next to the sofa, kick the ball under the black table, and the cushion on the floor goes back on the sofa.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "077_rubiks_cube_:0000",
+   "in": "frl_apartment_basket_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "kick",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01",
+   "under": true
+  },
+  {
+   "id": "c3",
+   "kind": "on_top",
+   "obj": "frl_apartment_cushion_03_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_basket",
+   "pos": [
+    -0.7331675291061401,
+    0.27552658319473267,
+    2.4079360961914062
+   ],
+   "yaw": 285.7366345751687,
+   "handle": "frl_apartment_basket_:0000"
+  },
+  {
+   "template": "frl_apartment_cushion_03",
+   "pos": [
+    -0.8505680561065674,
+    0.22552658319473268,
+    0.6571917533874512
+   ],
+   "yaw": 337.7173937365415,
+   "handle": "frl_apartment_cushion_03_:0000"
+  }
+ ],
+ "objects": {
+  "056_tennis_ball_:0000": [
+   1.925,
+   0.055,
+   1.669
+  ]
+ }
+}

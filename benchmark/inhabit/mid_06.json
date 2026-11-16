@@ -1,0 +1,62 @@
+{
+ "id": "mid_06",
+ "level": "mid",
+ "categories": [
+  "kitchen",
+  "bimanual"
+ ],
+ "physics_levels": [
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 18
+ },
+ "instruction": "Take both the coffee mug and the serving bowl on the black table to the sink in one go - one in each hand.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cup_01_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "frl_apartment_bowl_02_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  },
+  {
+   "id": "c3",
+   "kind": "held_together",
+   "a": "frl_apartment_cup_01_:0000",
+   "b": "frl_apartment_bowl_02_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cup_01",
+   "pos": [
+    -1.9538754197190233,
+    0.8232993459701539,
+    -1.4902786989551953
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_cup_01_:0000"
+  },
+  {
+   "template": "frl_apartment_bowl_02",
+   "pos": [
+    -2.0614239149224485,
+    0.8232993459701539,
+    -1.0022593719711546
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_bowl_02_:0000"
+  }
+ ],
+ "objects": {}
+}

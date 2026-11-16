@@ -1,0 +1,53 @@
+{
+ "id": "mid_16",
+ "level": "mid",
+ "categories": [
+  "container",
+  "floor"
+ ],
+ "physics_levels": [
+  0,
+  2
+ ],
+ "base": {
+  "set": "base",
+  "id": 7
+ },
+ "instruction": "Please tidy up: put the rubriks cube in the cardboard box and kick the ball back under the black table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "077_rubiks_cube_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "kick",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01",
+   "under": true
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    1.8356622457504272,
+    0.2653443217277527,
+    5.994260787963867
+   ],
+   "yaw": 144.1788783426916,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {
+  "056_tennis_ball_:0000": [
+   1.997,
+   0.055,
+   1.536
+  ]
+ }
+}

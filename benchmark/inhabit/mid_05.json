@@ -1,0 +1,41 @@
+{
+ "id": "mid_05",
+ "level": "mid",
+ "categories": [
+  "kitchen",
+  "articulated"
+ ],
+ "physics_levels": [
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 27
+ },
+ "instruction": "The fridge is open. Put the peach inside and close the door.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "inside",
+   "obj": "015_peach_:0000",
+   "container": "fridge_push_point"
+  },
+  {
+   "id": "c2",
+   "kind": "closed",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "order": [
+  [
+   "c1",
+   "c2"
+  ]
+ ],
+ "joints": {
+  "fridge_push_point": 1.5
+ },
+ "add_objects": [],
+ "objects": {}
+}

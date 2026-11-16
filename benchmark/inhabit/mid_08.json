@@ -1,0 +1,63 @@
+{
+ "id": "mid_08",
+ "level": "mid",
+ "categories": [
+  "container",
+  "floor"
+ ],
+ "physics_levels": [
+  0,
+  2
+ ],
+ "base": {
+  "set": "base",
+  "id": 0
+ },
+ "instruction": "Tidy the rubriks cube into the cardboard box next to the sofa, and push the shoe on the floor out of the way with your foot (at least half a metre).",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "077_rubiks_cube_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "push",
+   "obj": "frl_apartment_shoe_01_:0000",
+   "away": {
+    "dist": 0.5,
+    "from": [
+     -0.032,
+     0.074,
+     3.344
+    ]
+   }
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    2.0690014362335205,
+    0.2653437554836273,
+    5.920045852661133
+   ],
+   "yaw": 67.06297933719755,
+   "handle": "frl_apartment_box_:0000"
+  },
+  {
+   "template": "frl_apartment_shoe_01",
+   "pos": [
+    -0.031989842653274536,
+    0.1653437554836273,
+    3.343353748321533
+   ],
+   "yaw": 177.0155553384283,
+   "handle": "frl_apartment_shoe_01_:0000"
+  }
+ ],
+ "objects": {}
+}

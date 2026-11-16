@@ -1,0 +1,55 @@
+{
+ "id": "mid_10",
+ "level": "mid",
+ "categories": [
+  "kitchen"
+ ],
+ "physics_levels": [
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 3
+ },
+ "instruction": "Clear the coffee mug and the dinner plate from the brown table into the sink.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cup_02_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "frl_apartment_plate_01_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cup_02",
+   "pos": [
+    2.0561455835753444,
+    0.9841820573806763,
+    7.598541996469217
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_cup_02_:0000"
+  },
+  {
+   "template": "frl_apartment_plate_01",
+   "pos": [
+    2.3001558284912633,
+    0.9841820573806763,
+    7.6689780302313935
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_plate_01_:0000"
+  }
+ ],
+ "objects": {}
+}

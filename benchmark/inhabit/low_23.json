@@ -1,0 +1,33 @@
+{
+ "id": "low_23",
+ "level": "low",
+ "categories": [
+  "surface"
+ ],
+ "physics_levels": [
+  1
+ ],
+ "base": {
+  "set": "base",
+  "id": 4
+ },
+ "instruction": "Throw the ball lying on the floor onto the sofa - from a metre or more.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "throw",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "056_tennis_ball_:0000": [
+   -1.104,
+   0.055,
+   0.865
+  ]
+ }
+}

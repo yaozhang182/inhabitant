@@ -1,0 +1,49 @@
+{
+ "id": "body_01",
+ "level": "body",
+ "categories": [
+  "body",
+  "sit"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 46
+ },
+ "instruction": "Pick the cushion up off the floor and put it on the sofa; after that, take a seat on the sofa.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cushion_01_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  },
+  {
+   "id": "c2",
+   "kind": "sit_on",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  }
+ ],
+ "order": [
+  [
+   "c1",
+   "c2"
+  ]
+ ],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cushion_01",
+   "pos": [
+    -0.5550819635391235,
+    0.23387323021888734,
+    2.9337761402130127
+   ],
+   "yaw": 198.67424666229027,
+   "handle": "frl_apartment_cushion_01_:0000"
+  }
+ ],
+ "objects": {}
+}

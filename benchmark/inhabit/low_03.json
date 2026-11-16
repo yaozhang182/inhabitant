@@ -1,0 +1,38 @@
+{
+ "id": "low_03",
+ "level": "low",
+ "categories": [
+  "container"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 12
+ },
+ "instruction": "Put the toy airplane in the cardboard box next to the black table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "072-d_toy_airplane_:0000",
+   "in": "frl_apartment_box_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    2.3801937103271484,
+    0.27548494935035706,
+    2.4610109329223633
+   ],
+   "yaw": 190.3237181092394,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {}
+}

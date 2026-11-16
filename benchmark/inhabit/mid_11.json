@@ -1,0 +1,71 @@
+{
+ "id": "mid_11",
+ "level": "mid",
+ "categories": [
+  "kitchen",
+  "avoid"
+ ],
+ "physics_levels": [
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 46
+ },
+ "instruction": "Please take the dirty coffee mug and dinner plate on the black table to the sink - without touching the vase next to them.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cup_02_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "frl_apartment_plate_01_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  },
+  {
+   "id": "c3",
+   "kind": "avoid",
+   "thing": "frl_apartment_vase_01_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cup_02",
+   "pos": [
+    1.0516187970597963,
+    0.8232993459701539,
+    1.9391523554135754
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_cup_02_:0000"
+  },
+  {
+   "template": "frl_apartment_plate_01",
+   "pos": [
+    1.1367570371445155,
+    0.8232993459701539,
+    1.537351381641978
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_plate_01_:0000"
+  },
+  {
+   "template": "frl_apartment_vase_01",
+   "pos": [
+    1.2716187970597963,
+    0.8232993459701539,
+    2.0591523554135756
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_vase_01_:0000"
+  }
+ ],
+ "objects": {}
+}

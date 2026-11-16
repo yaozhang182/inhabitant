@@ -1,0 +1,34 @@
+{
+ "id": "low_09",
+ "level": "low",
+ "categories": [
+  "shelf",
+  "reach low"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 17
+ },
+ "instruction": "Could you put the orange away on the bottom shelf of the TV stand?",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "017_orange_:0000",
+   "surface": "receptacle_aabb_TvStnd1_Top3_frl_apartment_tvstand"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "017_orange_:0000": [
+   4.074,
+   0.795,
+   4.369
+  ]
+ }
+}

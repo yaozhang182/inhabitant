@@ -1,0 +1,38 @@
+{
+ "id": "low_02",
+ "level": "low",
+ "categories": [
+  "container"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 33
+ },
+ "instruction": "Put the lego in the cardboard box next to the black table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "073-b_lego_duplo_:0000",
+   "in": "frl_apartment_box_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    2.5813183784484863,
+    0.27552610635757446,
+    5.146414756774902
+   ],
+   "yaw": 229.64988975053757,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {}
+}

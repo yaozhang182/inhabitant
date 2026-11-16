@@ -1,0 +1,28 @@
+{
+ "id": "low_15",
+ "level": "low",
+ "categories": [
+  "articulated"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 16
+ },
+ "instruction": "The fridge door is open, please close it.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "closed",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "order": [],
+ "joints": {
+  "fridge_push_point": 1.5
+ },
+ "add_objects": [],
+ "objects": {}
+}

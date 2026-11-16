@@ -1,0 +1,63 @@
+{
+ "id": "mid_09",
+ "level": "mid",
+ "categories": [
+  "container",
+  "floor"
+ ],
+ "physics_levels": [
+  0,
+  2
+ ],
+ "base": {
+  "set": "base",
+  "id": 9
+ },
+ "instruction": "Put the lego in the cardboard box by the sofa. There's a shoe lying in the way - nudge it aside with your foot, half a metre or more, without picking it up.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "073-g_lego_duplo_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "push",
+   "obj": "frl_apartment_shoe_01_:0000",
+   "away": {
+    "dist": 0.5,
+    "from": [
+     -0.524,
+     0.074,
+     0.197
+    ]
+   }
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    -0.9078117609024048,
+    0.2755253314971924,
+    0.2799707055091858
+   ],
+   "yaw": 176.76228370766034,
+   "handle": "frl_apartment_box_:0000"
+  },
+  {
+   "template": "frl_apartment_shoe_01",
+   "pos": [
+    -0.5558210611343384,
+    0.17552533149719238,
+    0.19622276723384857
+   ],
+   "yaw": 106.12084260043476,
+   "handle": "frl_apartment_shoe_01_:0000"
+  }
+ ],
+ "objects": {}
+}

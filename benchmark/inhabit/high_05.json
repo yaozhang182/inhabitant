@@ -1,0 +1,94 @@
+{
+ "id": "high_05",
+ "level": "high",
+ "categories": [
+  "container",
+  "all"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 3
+ },
+ "instruction": "Put all the things on the black table into the cardboard box beside it.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "018_plum_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c2",
+   "kind": "in_container",
+   "obj": "015_peach_:0000",
+   "in": "frl_apartment_box_:0000"
+  },
+  {
+   "id": "c3",
+   "kind": "in_container",
+   "obj": "016_pear_:0000",
+   "in": "frl_apartment_box_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    0.812986433506012,
+    0.2653438150882721,
+    0.3245335817337036
+   ],
+   "yaw": 320.5665666046063,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {
+  "012_strawberry_:0000": [
+   -2.12,
+   0.879,
+   2.601
+  ],
+  "016_pear_:0000": [
+   1.366,
+   0.785,
+   1.847
+  ],
+  "031_spoon_:0000": [
+   -2.445,
+   0.888,
+   2.653
+  ],
+  "038_padlock_:0000": [
+   -2.018,
+   0.874,
+   2.553
+  ],
+  "056_tennis_ball_:0000": [
+   -2.196,
+   0.89,
+   2.48
+  ],
+  "073-g_lego_duplo_:0000": [
+   -2.244,
+   0.907,
+   2.663
+  ],
+  "018_plum_:0000": [
+   0.863,
+   0.785,
+   1.756
+  ],
+  "015_peach_:0000": [
+   1.069,
+   0.785,
+   1.555
+  ]
+ }
+}

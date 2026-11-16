@@ -1,0 +1,55 @@
+{
+ "id": "mid_14",
+ "level": "mid",
+ "categories": [
+  "surface"
+ ],
+ "physics_levels": [
+  0,
+  1
+ ],
+ "base": {
+  "set": "complex_instruction",
+  "id": 36
+ },
+ "instruction": "Two things are on the floor: put the cushion back on the sofa, and toss the towel onto the sofa from at least a metre away.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cushion_01_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  },
+  {
+   "id": "c2",
+   "kind": "throw",
+   "obj": "frl_apartment_towel_:0000",
+   "surface": "receptacle_aabb_Sofa_frl_apartment_sofa"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cushion_01",
+   "pos": [
+    2.014477491378784,
+    0.21534298062324525,
+    5.608277320861816
+   ],
+   "yaw": 194.84498413230762,
+   "handle": "frl_apartment_cushion_01_:0000"
+  },
+  {
+   "template": "frl_apartment_towel",
+   "pos": [
+    2.1054444313049316,
+    0.21534298062324525,
+    6.632704734802246
+   ],
+   "yaw": 90.89303814550544,
+   "handle": "frl_apartment_towel_:0000"
+  }
+ ],
+ "objects": {}
+}

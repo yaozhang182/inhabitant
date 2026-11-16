@@ -1,0 +1,38 @@
+{
+ "id": "low_06",
+ "level": "low",
+ "categories": [
+  "surface"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 41
+ },
+ "instruction": "Pick up the remote control from the floor and put it on the TV stand.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_remote-control_01_:0000",
+   "surface": "receptacle_aabb_TvStnd1_Top1_frl_apartment_tvstand"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_remote-control_01",
+   "pos": [
+    2.4088339805603027,
+    0.21534497737884523,
+    1.1761245727539062
+   ],
+   "yaw": 33.6447106188175,
+   "handle": "frl_apartment_remote-control_01_:0000"
+  }
+ ],
+ "objects": {}
+}

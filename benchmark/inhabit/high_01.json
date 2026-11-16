@@ -1,0 +1,84 @@
+{
+ "id": "high_01",
+ "level": "high",
+ "categories": [
+  "shelf",
+  "reach high",
+  "all"
+ ],
+ "physics_levels": [
+  0,
+  0,
+  0
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 49
+ },
+ "instruction": "Clear the sofa: all the things on it go on the top shelf of the tall shelf next to the black table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "013_apple_:0000",
+   "surface": "receptacle_aabb_WC1_Top1frl_apartment_wall_cabinet_01"
+  },
+  {
+   "id": "c2",
+   "kind": "on_top",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_WC1_Top1frl_apartment_wall_cabinet_01"
+  },
+  {
+   "id": "c3",
+   "kind": "on_top",
+   "obj": "017_orange_:0000",
+   "surface": "receptacle_aabb_WC1_Top1frl_apartment_wall_cabinet_01"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "013_apple_:0000": [
+   -1.405,
+   0.437,
+   2.671
+  ],
+  "056_tennis_ball_:0000": [
+   -1.328,
+   0.434,
+   2.705
+  ],
+  "017_orange_:0000": [
+   -1.274,
+   0.435,
+   3.209
+  ],
+  "033_spatula_:0000": [
+   0.5796,
+   0.9397,
+   7.1501
+  ],
+  "038_padlock_:0000": [
+   0.5796,
+   0.9397,
+   7.2998
+  ],
+  "065-g_cups_:0000": [
+   0.5796,
+   0.9397,
+   7.4495
+  ],
+  "070-a_colored_wood_blocks_:0000": [
+   0.5796,
+   0.9397,
+   7.5992
+  ],
+  "frl_apartment_book_04_:0000": [
+   0.5796,
+   0.9397,
+   7.7488
+  ]
+ }
+}

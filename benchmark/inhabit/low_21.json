@@ -1,0 +1,38 @@
+{
+ "id": "low_21",
+ "level": "low",
+ "categories": [
+  "container"
+ ],
+ "physics_levels": [
+  1
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 30
+ },
+ "instruction": "Toss the ball into the cardboard box by the TV stand from where you can, at least a metre away.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "throw",
+   "obj": "056_tennis_ball_:0000",
+   "in": "frl_apartment_box_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    2.2973074913024902,
+    0.2754850387573242,
+    0.7201143503189087
+   ],
+   "yaw": 251.12074639657763,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {}
+}

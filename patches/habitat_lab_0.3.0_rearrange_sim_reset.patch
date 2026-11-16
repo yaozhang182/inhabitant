@@ -1,0 +1,22 @@
+diff --git a/habitat-lab/habitat/tasks/rearrange/rearrange_sim.py b/habitat-lab/habitat/tasks/rearrange/rearrange_sim.py
+index 19a738d..5ca3ba8 100644
+--- a/habitat-lab/habitat/tasks/rearrange/rearrange_sim.py
++++ b/habitat-lab/habitat/tasks/rearrange/rearrange_sim.py
+@@ -271,7 +271,17 @@ class RearrangeSim(HabitatSim):
+ 
+     @add_perf_timing_func()
+     def reset(self):
++        # Inhabitant patch: habitat-sim 0.3.3 Simulator.reset() restores every object to its state at creation, which
++        # sends the episode objects (created at the origin, then moved by _add_objs) back to (0,0,0). Save and restore them.
++        rom = self.get_rigid_object_manager(); aom = self.get_articulated_object_manager()
++        saved = [(oid, rom.get_object_by_id(oid).transformation) for oid in getattr(self, "_scene_obj_ids", [])]
++        saved_ao = [(h, aom.get_object_by_handle(h).transformation, aom.get_object_by_handle(h).joint_positions)
++                    for h in aom.get_object_handles()]
+         SimulatorBackend.reset(self)
++        for oid, T in saved:
++            rom.get_object_by_id(oid).transformation = T
++        for h, T, q in saved_ao:
++            ao = aom.get_object_by_handle(h); ao.transformation = T; ao.joint_positions = q
+         for i in range(len(self.agents)):
+             self.reset_agent(i)
+         return None

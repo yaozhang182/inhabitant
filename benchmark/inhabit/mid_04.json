@@ -1,0 +1,41 @@
+{
+ "id": "mid_04",
+ "level": "mid",
+ "categories": [
+  "kitchen",
+  "articulated"
+ ],
+ "physics_levels": [
+  0,
+  0
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 47
+ },
+ "instruction": "The fridge is open. Put the banana inside and close the door.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "inside",
+   "obj": "011_banana_:0000",
+   "container": "fridge_push_point"
+  },
+  {
+   "id": "c2",
+   "kind": "closed",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "order": [
+  [
+   "c1",
+   "c2"
+  ]
+ ],
+ "joints": {
+  "fridge_push_point": 1.5
+ },
+ "add_objects": [],
+ "objects": {}
+}

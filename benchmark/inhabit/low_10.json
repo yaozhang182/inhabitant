@@ -1,0 +1,38 @@
+{
+ "id": "low_10",
+ "level": "low",
+ "categories": [
+  "kitchen"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "visual_appearance",
+  "id": 15
+ },
+ "instruction": "Please bring the dirty coffee mug on the brown table to the sink.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "frl_apartment_cup_01_:0000",
+   "surface": "receptacle_aabb_sink_kitchen_counter"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_cup_01",
+   "pos": [
+    1.0189087691069036,
+    0.9849916076660157,
+    1.6160292778140315
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_cup_01_:0000"
+  }
+ ],
+ "objects": {}
+}

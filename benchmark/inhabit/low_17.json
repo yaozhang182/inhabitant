@@ -1,0 +1,29 @@
+{
+ "id": "low_17",
+ "level": "low",
+ "categories": [
+  "articulated",
+  "drawer"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "spatial_relationship",
+  "id": 4
+ },
+ "instruction": "Open the right drawer of the kitchen counter.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "opened",
+   "marker": "cab_push_point_5"
+  }
+ ],
+ "order": [],
+ "joints": {
+  "cab_push_point_5": 0.0
+ },
+ "add_objects": [],
+ "objects": {}
+}

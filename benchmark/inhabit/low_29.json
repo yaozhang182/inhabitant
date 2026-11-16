@@ -1,0 +1,40 @@
+{
+ "id": "low_29",
+ "level": "low",
+ "categories": [
+  "floor",
+  "furniture"
+ ],
+ "physics_levels": [
+  2
+ ],
+ "base": {
+  "set": "base",
+  "id": 27
+ },
+ "instruction": "Nudge the cardboard box under the black table - no need to pick it up, just push it with your foot.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "push",
+   "obj": "frl_apartment_box_:0000",
+   "surface": "receptacle_aabb_Tbl1_Top1_frl_apartment_table_01",
+   "under": true
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    1.893577218055725,
+    0.2755260467529297,
+    5.801741600036621
+   ],
+   "yaw": 0.0,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {}
+}

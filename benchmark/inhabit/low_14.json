@@ -1,0 +1,28 @@
+{
+ "id": "low_14",
+ "level": "low",
+ "categories": [
+  "articulated"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 26
+ },
+ "instruction": "Please open the fridge.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "opened",
+   "marker": "fridge_push_point"
+  }
+ ],
+ "order": [],
+ "joints": {
+  "fridge_push_point": 0.0
+ },
+ "add_objects": [],
+ "objects": {}
+}

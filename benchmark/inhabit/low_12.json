@@ -1,0 +1,28 @@
+{
+ "id": "low_12",
+ "level": "low",
+ "categories": [
+  "kitchen",
+  "articulated"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 46
+ },
+ "instruction": "Put the banana in the fridge.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "inside",
+   "obj": "011_banana_:0000",
+   "container": "fridge_push_point"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {}
+}

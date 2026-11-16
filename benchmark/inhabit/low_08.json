@@ -1,0 +1,34 @@
+{
+ "id": "low_08",
+ "level": "low",
+ "categories": [
+  "shelf",
+  "reach high"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "visual_appearance",
+  "id": 31
+ },
+ "instruction": "Put the ball on the top shelf of the tall shelf next to the brown table.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "on_top",
+   "obj": "056_tennis_ball_:0000",
+   "surface": "receptacle_aabb_WC2_Top1_frl_apartment_wall_cabinet_02"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [],
+ "objects": {
+  "056_tennis_ball_:0000": [
+   -2.072,
+   0.964,
+   0.628
+  ]
+ }
+}

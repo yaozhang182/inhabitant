@@ -1,0 +1,38 @@
+{
+ "id": "low_01",
+ "level": "low",
+ "categories": [
+  "container"
+ ],
+ "physics_levels": [
+  0
+ ],
+ "base": {
+  "set": "base",
+  "id": 18
+ },
+ "instruction": "Could you tidy up the toy airplane? It goes in the cardboard box by the TV stand.",
+ "conditions": [
+  {
+   "id": "c1",
+   "kind": "in_container",
+   "obj": "072-a_toy_airplane_:0000",
+   "in": "frl_apartment_box_:0000"
+  }
+ ],
+ "order": [],
+ "joints": {},
+ "add_objects": [
+  {
+   "template": "frl_apartment_box",
+   "pos": [
+    0.556950032711029,
+    0.26534411311149597,
+    1.6909306049346924
+   ],
+   "yaw": 216.42871720073109,
+   "handle": "frl_apartment_box_:0000"
+  }
+ ],
+ "objects": {}
+}
