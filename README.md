@@ -4,7 +4,7 @@
 
 Inhabitant is a training-free LLM agent that carries out household tasks with a human body. It drives the pretrained motion
 generator [Kimodo](https://github.com/nv-tlabs/kimodo) one segment at a time with Kimodo's own inputs (text and its constraint
-JSON); every try is executed in a half-physics simulator ([HumanCLAW](https://github.com/Ryenhails/HumanCLAW)'s habitat-sim
+JSON); every try is executed in a half-physics simulator ([HumanCLAW](https://github.com/Human-CLAW/HumanCLAW)'s habitat-sim
 build: furniture blocks the body, objects move physically), the agent measures the result with a read-only `inspect` tool,
 revises, and commits. This repository holds the agent, and **Inhabit**, a benchmark of 75 household tasks with its evaluation.
 
@@ -51,7 +51,7 @@ What the steps do:
 
 1. **Environment.** Python 3.11, `torch==2.6.0` (cu124), GL / EGL runtime libraries and `libstdcxx-ng>=13` from conda-forge
    (a habitat-sim built with gcc 13 needs GLIBCXX_3.4.32), the Python packages, and `pip install -e .`.
-2. **Simulator.** [HumanCLAW](https://github.com/Ryenhails/HumanCLAW) provides the half-physics controller, the body (URDF)
+2. **Simulator.** [HumanCLAW](https://github.com/Human-CLAW/HumanCLAW) provides the half-physics controller, the body (URDF)
    and a patch for habitat-sim. The script clones it to `third_party/HumanCLAW`, builds habitat-sim at the revision HumanCLAW
    pins (`acbe6f4`, version 0.3.3) with `patches/habitat-sim/humanclaw_halfphysics.patch` (headless, CUDA, Bullet), exactly as
    HumanCLAW's README says, and installs habitat-lab **0.3.0** (`--no-deps`) with two patches from `patches/`:
@@ -256,6 +256,6 @@ and the ReplicaCAD and YCB assets; see their repositories.
 ## Acknowledgements
 
 This work builds on [Kimodo](https://github.com/nv-tlabs/kimodo) (motion generation),
-[HumanCLAW](https://github.com/Ryenhails/HumanCLAW) (half-physics simulation and the body),
+[HumanCLAW](https://github.com/Human-CLAW/HumanCLAW) (half-physics simulation and the body),
 [EmbodiedBench](https://github.com/EmbodiedBench/EmbodiedBench) (EB-Habitat episodes) and
 [Habitat](https://github.com/facebookresearch/habitat-sim) (habitat-sim, habitat-lab, ReplicaCAD). We thank their authors.

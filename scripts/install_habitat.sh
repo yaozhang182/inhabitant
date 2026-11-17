@@ -8,7 +8,7 @@
 set -ex
 REPO="$(cd "$(dirname "$0")/.." && pwd)"; TP="$REPO/third_party"; mkdir -p "$TP"
 HC=${HUMANCLAW_ROOT:-$TP/HumanCLAW}
-[ -d "$HC" ] || git clone https://github.com/Ryenhails/HumanCLAW.git "$HC"
+[ -d "$HC" ] || git clone https://github.com/Human-CLAW/HumanCLAW.git "$HC"
 
 # habitat-sim at the revision HumanCLAW pins, with its half-physics patch
 if ! python -c "import habitat_sim" 2>/dev/null; then
