@@ -15,8 +15,6 @@ build: furniture blocks the body, objects move physically), the agent measures t
 revises, and commits. This repository holds the agent, and **Inhabit**, a benchmark of 75 household tasks with its evaluation.
 
 <!-- teaser -->
-<p align="center"><img src="assets/comparison.gif" width="95%" alt="One task, four agents with the same language model: Inhabitant reaches all three goals, the adapted baselines do not"></p>
-<p align="center"><em>One instruction, four agents with the same language model (4&times; speed). &dagger; adapted to our benchmark.</em></p>
 <p align="center"><img src="assets/teaser.png" width="95%" alt="Existing agents and Inhabitant on one step of a household task"></p>
 <!-- /teaser -->
 
