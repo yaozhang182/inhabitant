@@ -5,7 +5,7 @@
 
 Yao Zhang\*, Zhuchenyang Liu\*, Yu Xiao &nbsp;(\* equal contribution) &nbsp;·&nbsp; Aalto University
 
-[Project page](https://ryenhails.github.io/Inhabitant/) &nbsp;|&nbsp; arXiv (coming soon) &nbsp;|&nbsp; Benchmark on Hugging Face (coming soon)
+[Project page](https://ryenhails.github.io/Inhabitant/) &nbsp;|&nbsp; arXiv (coming soon) &nbsp;|&nbsp; [Benchmark on Hugging Face](https://huggingface.co/datasets/zyyy12138/Inhabit)
 <!-- /authors -->
 
 Inhabitant is a training-free LLM agent that carries out household tasks with a human body. It drives the pretrained motion
@@ -15,6 +15,8 @@ build: furniture blocks the body, objects move physically), the agent measures t
 revises, and commits. This repository holds the agent, and **Inhabit**, a benchmark of 75 household tasks with its evaluation.
 
 <!-- teaser -->
+<p align="center"><img src="assets/comparison.gif" width="95%" alt="One task, four agents with the same language model: Inhabitant reaches all three goals, the adapted baselines do not"></p>
+<p align="center"><em>One instruction, four agents with the same language model (4&times; speed). &dagger; adapted to our benchmark.</em></p>
 <p align="center"><img src="assets/teaser.png" width="95%" alt="Existing agents and Inhabitant on one step of a household task"></p>
 <!-- /teaser -->
 
@@ -209,6 +211,11 @@ blocked segments (the executed pelvis ends up more than 0.3 m from the generated
 missed grasps / releases, and success within k tries.
 
 ## The Inhabit benchmark
+
+<!-- public -->
+The tasks, together with the scenes and objects they use, are also on Hugging Face: [zyyy12138/Inhabit](https://huggingface.co/datasets/zyyy12138/Inhabit). With that data in
+`INHABITANT_DATA`, the steps that download the EB-Habitat assets and export the episode metadata can be skipped.
+<!-- /public -->
 
 75 tasks in `benchmark/inhabit/` (`low_01`-`low_30`, `mid_01`-`mid_20`, `high_01`-`high_15`, `body_01`-`body_10`): picking
 and placing on shelves, tables and in containers, drawers and the fridge, throwing, kicking and pushing, and tasks where the
