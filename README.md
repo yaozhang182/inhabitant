@@ -1,6 +1,12 @@
 # Inhabitant
 
-**Authors** &nbsp;|&nbsp; [Paper](#) &nbsp;|&nbsp; [arXiv](#) &nbsp;|&nbsp; [Project page](#)
+<!-- authors -->
+**Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback**
+
+Yao Zhang\*, Zhuchenyang Liu\*, Yu Xiao &nbsp;(\* equal contribution) &nbsp;·&nbsp; Aalto University
+
+[Project page](https://ryenhails.github.io/Inhabitant/) &nbsp;|&nbsp; arXiv (coming soon) &nbsp;|&nbsp; Benchmark on Hugging Face (coming soon)
+<!-- /authors -->
 
 Inhabitant is a training-free LLM agent that carries out household tasks with a human body. It drives the pretrained motion
 generator [Kimodo](https://github.com/nv-tlabs/kimodo) one segment at a time with Kimodo's own inputs (text and its constraint
@@ -8,7 +14,9 @@ JSON); every try is executed in a half-physics simulator ([HumanCLAW](https://gi
 build: furniture blocks the body, objects move physically), the agent measures the result with a read-only `inspect` tool,
 revises, and commits. This repository holds the agent, and **Inhabit**, a benchmark of 75 household tasks with its evaluation.
 
-<p align="center"><em>teaser figure (placeholder)</em></p>
+<!-- teaser -->
+<p align="center"><img src="assets/teaser.png" width="95%" alt="Existing agents and Inhabitant on one step of a household task"></p>
+<!-- /teaser -->
 
 ## How it works
 
@@ -38,7 +46,7 @@ its text encoder on the GPU (set `TEXT_ENCODER_DEVICE=cpu` on smaller cards), an
 > CUDA, proxies). Places we could not verify are marked "not verified" below.
 
 ```bash
-git clone <this repository> inhabitant && cd inhabitant
+git clone https://github.com/yaozhang182/inhabitant.git inhabitant && cd inhabitant
 bash scripts/install_env.sh            # 1. conda env "inhabitant": Python 3.11, torch 2.6.0 (cu124), this package
 conda activate inhabitant
 bash scripts/install_habitat.sh        # 2. HumanCLAW, habitat-sim (half-physics build), habitat-lab 0.3.0 + patches
@@ -245,10 +253,10 @@ and the ReplicaCAD and YCB assets; see their repositories.
 ## Citation
 
 ```bibtex
-@article{inhabitant,
-  title   = {Inhabitant (title placeholder)},
-  author  = {Authors},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+@article{zhang2026inhabitant,
+  title   = {Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback},
+  author  = {Zhang, Yao and Liu, Zhuchenyang and Xiao, Yu},
+  journal = {arXiv preprint},
   year    = {2026}
 }
 ```
