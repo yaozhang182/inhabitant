@@ -5,7 +5,7 @@
 
 Yao Zhang\*, Zhuchenyang Liu\*, Yu Xiao &nbsp;(\* equal contribution) &nbsp;·&nbsp; Aalto University
 
-[Project page](https://ryenhails.github.io/Inhabitant/) &nbsp;|&nbsp; arXiv (coming soon) &nbsp;|&nbsp; [Benchmark on Hugging Face](https://huggingface.co/datasets/zyyy12138/Inhabit)
+[Project page](https://ryenhails.github.io/Inhabitant/) &nbsp;|&nbsp; [arXiv](https://arxiv.org/abs/2611.25005) &nbsp;|&nbsp; [Benchmark on Hugging Face](https://huggingface.co/datasets/zyyy12138/Inhabit)
 <!-- /authors -->
 
 Inhabitant is a training-free LLM agent that carries out household tasks with a human body. It drives the pretrained motion
@@ -261,7 +261,7 @@ and the ReplicaCAD and YCB assets; see their repositories.
 @article{zhang2026inhabitant,
   title   = {Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback},
   author  = {Zhang, Yao and Liu, Zhuchenyang and Xiao, Yu},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2611.25005},
   year    = {2026}
 }
 ```
